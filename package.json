@@ -4,6 +4,8 @@
   "version": "0.0.1-dev",
   "private": true,
   "dependencies": {
-    "express": "3.x"
+    "express": "3.x",
+    "socket.io": "9.x",
+    "node-cassandra-cql": "0.5.0"
   }
 }

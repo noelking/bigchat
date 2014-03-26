@@ -1,4 +1,6 @@
 var socket;
+var profile;
+var email;
 
 function init() {
 	  console.log("Init");
@@ -8,22 +10,33 @@ function init() {
 
 function createSocketListener() {
 	socket.on('message', function (data) {
-		console.log('Received data');
-	    console.log(data.message);
-	    displayMessage(data.message);
+	    console.log("Received message" + data.message);
+	    displayMessage(data.message, data.sender);
 	});
 }
 
-function send() {
-	console.log("Sending message");
-	var messageText = $("#message").val();
-	console.log("Sending " + messageText);
-	socket.emit('message', { message: messageText });
-	displayMessage(messageText);
+function registerUser() {
+	profile = $("#userProfile").val();
+	email = $("#emailAddress").val();
+	if(!profile || !email) {
+		alert('You must populate all fields');
+	} else {
+		$("#userProfile").prop('disabled', true);
+		$("#emailAddress").prop('disabled', true);
+		$("#register").hide();
+	}
 }
 
-function displayMessage(message) {
-	$("#messages").append("<span> " + message + "</span><br/>");
+function send() {
+	var messageText = $("#message").val();
+	socket.emit('message', { message: messageText,  sender: profile});
+	displayMessage(messageText, profile);
+	$("#message").val('');
+}
+
+function displayMessage(message, sender) {
+	sender = (sender) ? sender + ": " : "";
+	$("#messages").append("<span> "+ sender + message + "</span><br/>");
 }
 
 

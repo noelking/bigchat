@@ -1,0 +1,5 @@
+#!/bin/bash
+CASSANDRA_HOST=127.0.0.1
+CASSANDRA_KEYSPACE=developer_day
+export CASSANDRA_HOST CASSANDRA_KEYSPACE
+node app.js

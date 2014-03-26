@@ -9,3 +9,4 @@ create TABLE message(sender varchar, content text, sent_at timeuuid, PRIMARY KEY
 
 insert into message (sender, content, sent_at) VALUES('joe', 'expires soon', now()) using TTL 10;
 
+select * from message;

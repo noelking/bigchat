@@ -1,0 +1,19 @@
+<html>
+<head>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/bin/jquery.js"></script>
+	<script src="js/big.js"></script>
+</head>
+
+	<body>
+		<input type="input" id="message"></input>
+		<button id="sendButton" onclick="send()">Send</button>
+		<div id="messages"/>
+	</body>
+
+<script>
+	$( document ).ready(function() {
+		init();
+	});
+</script>
+</html>

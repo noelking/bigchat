@@ -1,0 +1,9 @@
+{
+  "name": "bigchat",
+  "description": "Big Chat Demo",
+  "version": "0.0.1-dev",
+  "private": true,
+  "dependencies": {
+    "express": "3.x"
+  }
+}

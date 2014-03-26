@@ -1,5 +1,9 @@
 # BIGCHAT
 
+The cassandra based messaging service which uses TTL in cassandra to automatically delete messages, cool right
+
+This was a 1.5 hack with DigBigData, so please don't judge and hope it helps you.
+
 Run 
 
 ````

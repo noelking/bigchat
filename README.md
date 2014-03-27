@@ -28,3 +28,6 @@ vagrant up
 __NOTE__
 
 You need to have vagrant and berkshelf installed
+
+### CQL
+You need run the cql/bigchat.cql to create the KEYSPACE and TABLE

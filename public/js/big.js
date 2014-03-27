@@ -28,10 +28,14 @@ function registerUser() {
 }
 
 function send() {
-	var messageText = $("#message").val();
-	socket.emit('message', { message: messageText,  sender: profile});
-	displayMessage(messageText, profile);
-	$("#message").val('');
+	if(profile) {
+		var messageText = $("#message").val();
+		socket.emit('message', { message: messageText,  sender: profile});
+		displayMessage(messageText, profile);
+		$("#message").val('');
+	} else {
+		alert('You need to register first');
+	}
 }
 
 function displayMessage(message, sender) {

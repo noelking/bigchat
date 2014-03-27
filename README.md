@@ -57,8 +57,8 @@ Navigate to http://localhost:3000
 
 When you can register on the left hand side
 
-![Home screen][docs/bigchat.png]
+![Home screen](docs/bigchat.png)
 
 Once registered chat away
 
-![Chat][docs/bigchat-conversation.png "Chat wall in action"]
+![Chat](docs/bigchat-conversation.png)

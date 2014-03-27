@@ -1,8 +1,27 @@
 # BIGCHAT
 
-The cassandra based messaging service which uses TTL in cassandra to automatically delete messages, cool right
+The node.js & cassandra based messaging service which uses TTL in cassandra to automatically delete messages, cool right
 
 This was a 2 hour hack project during a training session with DigBigData, so please don't judge, enjoy and hope it helps you.
+
+### Requirements
+* Node.js 
+* Cassandra (See below if not installed)
+
+### Setting up Node Modules/Plugins
+
+The following plugins are required
+ * express
+ * socket.io
+ * node-cassandra-cql
+
+To install these run
+
+````
+npm install express
+npm install socket.io
+npm install node-cassandra-cql 
+````
 
 Run 
 

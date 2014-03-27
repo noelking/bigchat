@@ -51,12 +51,14 @@ You need to have vagrant and berkshelf installed
 ### CQL
 You need run the cql/bigchat.cql to create the KEYSPACE and TABLE
 
-# Using the webapp
+## Using the webapp
 
 Navigate to http://localhost:3000
 
 When you can register on the left hand side
-![Home screen](https://github.com/noelking/bigchat/blob/master/docs/bigchat.png "Home screen")
+
+![Home screen][docs/bigchat.png]
 
 Once registered chat away
-![Chat](https://github.com/noelking/bigchat/blob/master/docs/bigchat-conversation.png "Chat wall in action")
+
+![Chat][docs/bigchat-conversation.png "Chat wall in action"]

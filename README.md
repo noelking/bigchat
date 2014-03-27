@@ -51,7 +51,7 @@ You need to have vagrant and berkshelf installed
 ### CQL
 You need run the cql/bigchat.cql to create the KEYSPACE and TABLE
 
-## Using the webapp
+## Using Big Chat
 
 Navigate to http://localhost:3000
 
